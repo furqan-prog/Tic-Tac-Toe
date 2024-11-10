@@ -28,7 +28,7 @@ boxes.forEach((element) => {
             turnHeading.innerText = 'Turn Of X'
         }
         else {
-            turnHeading.innerText = 'Turn Of O'
+            turnHeading.innerText = 'Turn Of 0'
             element.innerText = 'X';
             turn0 = true;
         }
@@ -69,7 +69,8 @@ const checkWinner = () => {
                         box.disabled = false
                         box.innerText = ''
                         msgContainer.classList.add('hide')
-                        turnHeading.innerText = 'Turn Of O';
+                        turnHeading.innerText = 'Turn Of 0';
+                        turn0 = true
                     }
                 });
             }
